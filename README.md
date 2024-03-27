@@ -17,7 +17,7 @@
 - datasoruce 의 정보를 사용자의 설정에 맞게 수정합니다.
 - <> 로 표시한 영역만 수정하시면 됩니다. 
 
-### **Mock 데이터 생성 **
+### Mock 데이터 생성
 아래의 API 를 순서대로 실행합니다 
 - GET /createUser
 - GET /createProduct
@@ -62,9 +62,9 @@ OrderReport 는 다음과 같은 정보를 담고 있습니다.
 
 dto/* 에 위와 관련된 코드를 확인할 수 있습니다. 
 
-### **결과**
+### 결과
 
-**a) 순수 JPA 사용 **
+**a) 순수 JPA 사용**
 <img width="337" alt="Screenshot 2024-03-27 at 7 12 55 PM" src="https://github.com/2024-capston/OrderReportTest-Spring/assets/79124461/7f83b5b4-74ff-4da3-9b3c-3260c8bbbd91">
 <img width="338" alt="Screenshot 2024-03-27 at 7 13 03 PM" src="https://github.com/2024-capston/OrderReportTest-Spring/assets/79124461/d33c8308-d9d0-4e6d-9dfb-af79daa38728">
 <img width="347" alt="Screenshot 2024-03-27 at 7 13 24 PM" src="https://github.com/2024-capston/OrderReportTest-Spring/assets/79124461/ef2d4495-4edf-4e68-9f3e-c4c4a27d6e33">
@@ -74,4 +74,4 @@ dto/* 에 위와 관련된 코드를 확인할 수 있습니다.
 ![Screenshot 2024-03-27 at 9 59 13 PM](https://github.com/2024-capston/OrderReportTest-Spring/assets/79124461/496729b3-406e-46ed-9f76-e596504cde8e)
 ![Screenshot 2024-03-27 at 9 59 10 PM](https://github.com/2024-capston/OrderReportTest-Spring/assets/79124461/55209185-fc1e-49b8-9038-5ddc57983515)
 
-5개 테이블 조인을 할 때 순수 JPA 를 사용했을 때와 성능 개선을 했을 때 약 40배 차이가 나는 것을 확인할 수 있다. 
+**5개 테이블 조인을 할 때 순수 JPA 를 사용했을 때와 성능 개선을 했을 때 약 40배 차이가 나는 것을 확인할 수 있다.** 
