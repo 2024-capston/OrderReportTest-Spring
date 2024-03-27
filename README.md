@@ -13,7 +13,7 @@
 - 순수 JPA 를 사용했을 때와 성능 개선을 한 쿼리를 사용했을 때의 성능 차이를 비교한다 (쿼리 생성을 위해 Querydsl 사용) 
 
 ## 사용 방법 및 설명 
-### **src/main/resources/application.yml 정보 수정 **
+### src/main/resources/application.yml 정보 수정
 - datasoruce 의 정보를 사용자의 설정에 맞게 수정합니다.
 - <> 로 표시한 영역만 수정하시면 됩니다. 
 
@@ -34,8 +34,9 @@
 ### OrderReport 조회
 
 아래의 API 를 통해 조회할 수 있습니다.
-GET /order-report/no-query-dsl/{userid} - 순수 JPA 만 사용 
-GET /order-report/query-dsl/{userid} - query dsl 사용 
+
+- GET /order-report/no-query-dsl/{userid} - 순수 JPA 만 사용 
+- GET /order-report/query-dsl/{userid} - query dsl 사용 
 
 OrderReport 는 다음과 같은 정보를 담고 있습니다. 
 1. 사용자의 PrimaryKey, 이름, 이메일
@@ -60,7 +61,7 @@ OrderReport 는 다음과 같은 정보를 담고 있습니다.
 2. 배송 시작 날짜 
 3. 배송 상태 
 
-dto/* 에 위와 관련된 코드를 확인할 수 있습니다. 
+dto 폴더에서 위와 관련된 코드를 확인할 수 있습니다. 
 
 ### 결과
 
