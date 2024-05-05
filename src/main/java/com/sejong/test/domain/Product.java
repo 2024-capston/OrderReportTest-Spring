@@ -21,4 +21,13 @@ public class Product {
 
     @Column()
     private BigDecimal price;
+
+    @Column(precision = 2, scale = 1) //소수점 한 자리 표현
+    private BigDecimal rating;
+
+    @Column()
+    private Boolean isDiscount;
+
+    @Column(length = 1)
+    private String category;
 }
