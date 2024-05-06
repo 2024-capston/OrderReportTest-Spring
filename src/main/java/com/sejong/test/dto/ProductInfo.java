@@ -15,7 +15,9 @@ public class ProductInfo {
     private Long productId;
     private String productName;
     private BigDecimal price;
+    private BigDecimal rating;
+    private Boolean isDiscount;
+    private String category;
     private Long quantity;
     private BigDecimal totalAmount;
-
 }
