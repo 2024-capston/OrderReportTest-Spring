@@ -99,6 +99,9 @@ public class OrderReportService {
                                 od.getProduct().getId(),
                                 od.getProduct().getProductName(),
                                 od.getProduct().getPrice(),
+                                od.getProduct().getRating(),
+                                od.getProduct().getIsDiscount(),
+                                od.getProduct().getCategory(),
                                 od.getQuantity(),
                                 od.getProduct().getPrice().multiply(BigDecimal.valueOf(od.getQuantity()))
                         )).collect(Collectors.toList())
