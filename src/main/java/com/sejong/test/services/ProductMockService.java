@@ -20,6 +20,9 @@ public class ProductMockService implements MockDataService<Product> {
         return Product.builder()
                 .productName(RandomCreateUtil.createRandomString())
                 .price(BigDecimal.valueOf(RandomCreateUtil.createRandomNumber(1000000,1000)))
+                .rating(RandomCreateUtil.createRandomRating())
+                .isDiscount(RandomCreateUtil.createRandomDiscount())
+                .category(RandomCreateUtil.createRandomCategories())
                 .build();
     }
 

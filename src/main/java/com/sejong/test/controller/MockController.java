@@ -14,6 +14,7 @@ public class MockController {
     private final ProductMockService productMockService;
     private final UserMockService userMockService;
     private final ShipmentMockService shipmentMockService;
+    private final ProductSearchMockService productSearchMockService;
 
     @GetMapping("/createUser")
     public boolean createUser() {
@@ -42,6 +43,12 @@ public class MockController {
     @GetMapping("/createShipment")
     public boolean createShipment() {
         shipmentMockService.createMockShipment();
+        return true;
+    }
+
+    @GetMapping("/createProductSearchHistory")
+    public boolean createProductSearchHistory(){
+        productSearchMockService.createMockProductSearchHistory();
         return true;
     }
 }

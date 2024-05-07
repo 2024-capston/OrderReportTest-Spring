@@ -3,6 +3,8 @@ package com.sejong.test.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 
@@ -22,4 +24,7 @@ public class User {
 
     @Column()
     private String email;
+
+    @OneToMany(mappedBy = "user")
+    private List<ProductSearchHistory> productSearchHistoryList;
 }

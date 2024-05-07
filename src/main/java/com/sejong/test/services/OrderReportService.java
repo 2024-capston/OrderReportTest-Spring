@@ -46,6 +46,9 @@ public class OrderReportService {
                 productInfo.setProductId(product.getId());
                 productInfo.setProductName(product.getProductName());
                 productInfo.setPrice(product.getPrice());
+                productInfo.setRating(product.getRating());
+                productInfo.setIsDiscount(product.getIsDiscount());
+                productInfo.setCategory(product.getCategory());
                 productInfo.setQuantity(orderDetail.getQuantity());
                 productInfo.setTotalAmount(product.getPrice().multiply(BigDecimal.valueOf(orderDetail.getQuantity())));
                 productInfos.add(productInfo);
